@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <Header />
           <div className="flex h-full w-full">
             <Sidebar />
-            <div className="flex">{children}</div>
+            <div className="flex w-full">{children}</div>
           </div>
         </div>
       </ThemeProvider>

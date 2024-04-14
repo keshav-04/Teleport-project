@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Card,
   List,
@@ -22,6 +23,8 @@ import { AiFillHeart } from "react-icons/ai";
 import { IoMdBriefcase } from "react-icons/io";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
+import flag from "/public/flag.png";
+
 export function Sidebar() {
   const [open, setOpen] = React.useState(0);
 
@@ -32,7 +35,7 @@ export function Sidebar() {
   return (
     <Card
       shadow={false}
-      className=" max-w-[20rem] rounded-none border-r border-blue-gray-100"
+      className="sticky left-0 top-0 max-w-[20rem] rounded-none border-r border-blue-gray-100"
     >
       <List>
         <ListItem>
@@ -116,7 +119,7 @@ export function Sidebar() {
         <hr className=" border-blue-gray-100" />
         <ListItem>
           <ListItemPrefix>
-            <img src="src/assets/indian-flag.png" alt="IN" className="h-5 w-5" />
+            <Image src={flag} alt="IN" className="h-5 w-5" />
           </ListItemPrefix>
           English
         </ListItem>

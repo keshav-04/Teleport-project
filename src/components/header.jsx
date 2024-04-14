@@ -9,11 +9,11 @@ import { FaBars } from "react-icons/fa";
 export function Header() {
 
   return (
-    <div className="max-h-[768px] w-full overflow-auto">
+    <div className="sticky top-0 z-10 max-h-[768px] w-full">
       <Navbar
         shadow={false}
         blurred={false}
-        className="sticky border-b border-blue-gray-100 top-0 z-10 h-20 max-w-full rounded-none px-3 py-4 lg:px-3 lg:py-4"
+        className="border-b border-blue-gray-100 h-20 max-w-full rounded-none px-3 py-4 lg:px-3 lg:py-4"
       >
         <div className="flex items-center justify-between text-blue-gray-900">
           <div className="flex items-center gap-x-4">
@@ -73,7 +73,7 @@ export function Header() {
           <div className="flex items-center gap-x-1">
             <Button
               variant="outlined"
-              className="rounded flex"
+              className="rounded flex normal-case px-4 py-3.5"
             >
               <div className="flex text-center">
                 <FaRegCircleUser className="mr-2 h-4 w-4" />
