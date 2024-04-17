@@ -7,7 +7,7 @@ import { Button } from "@material-tailwind/react";
 
 const NewsletterCard = () => {
   return (
-		<div className="flex w-full my-10 py-4 border border-blue-gray-100 rounded-lg">
+		<div className="flex w-full py-4 border border-blue-gray-100 rounded-lg">
 			<Image 
 				className="mx-16"
 				width={120}

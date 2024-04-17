@@ -25,6 +25,25 @@ import { FaIndianRupeeSign } from "react-icons/fa6";
 
 import flag from "/public/flag.png";
 
+const options1 = [
+  {
+    title: "Flights",
+    icon: <GiCommercialAirplane className="h-5 w-5" />,
+  },
+  {
+    title: "Stays",
+    icon: <IoBed className="h-5 w-5" />,
+  },
+  {
+    title: "Car Rental",
+    icon: <IoCarSport className="h-5 w-5" />,
+  },
+  {
+    title: "Flight+Hotel",
+    icon: <FaUmbrellaBeach className="h-5 w-5" />,
+  },
+];
+
 export function Sidebar() {
   const [open, setOpen] = React.useState(0);
 
@@ -46,30 +65,14 @@ export function Sidebar() {
         </ListItem>
         <hr className=" border-blue-gray-100" />
         <div>
-          <ListItem>
-            <ListItemPrefix>
-              <GiCommercialAirplane className="h-5 w-5" />
-            </ListItemPrefix>
-            Flights
-          </ListItem>
-          <ListItem>
-            <ListItemPrefix>
-              <IoBed className="h-5 w-5" />
-            </ListItemPrefix>
-            Stays
-          </ListItem>
-          <ListItem>
-            <ListItemPrefix>
-              <IoCarSport className="h-5 w-5" />
-            </ListItemPrefix>
-            Car Rental
-          </ListItem>
-          <ListItem>
-            <ListItemPrefix>
-              <FaUmbrellaBeach className="h-5 w-5" />
-            </ListItemPrefix>
-            Flight+Hotel
-          </ListItem>
+          {options1.map((option, index) => (
+            <React.Fragment key={index}>
+              <ListItem>
+                <ListItemPrefix>{option.icon}</ListItemPrefix>
+                {option.title}
+              </ListItem>
+            </React.Fragment>
+          ))}
         </div>
         <hr className=" border-blue-gray-100" />
         <div>

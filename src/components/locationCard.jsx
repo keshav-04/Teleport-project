@@ -18,7 +18,7 @@ export function LocationCard({
 ) {
   return (
     <div
-			className="flex flex-col w-full max-w-[19rem] m-2"
+			className="flex flex-col w-full max-w-[19rem]"
 		>
       <div className="relative rounded-xl w-full h-[23rem] object-contain overflow-hidden">
 				<Chip 

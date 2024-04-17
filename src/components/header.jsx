@@ -73,7 +73,7 @@ export function Header() {
           <div className="flex items-center gap-x-1">
             <Button
               variant="outlined"
-              className="rounded flex normal-case px-4 py-3.5"
+              className="rounded flex normal-case px-4 py-3.5 hover:bg-blue-gray-50"
             >
               <div className="flex text-center">
                 <FaRegCircleUser className="mr-2 h-4 w-4" />
